@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>I Appreciate You Upu</title>
+    <!-- New font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Poiret+One&family=Tiny5&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Base Reset and Body */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            animation: fadeIn 1s ease-in;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Main Header as Hero */
+        header {
+            padding: 5rem 2rem 6rem;
+            text-align: center;
+            /* background: linear-gradient(135deg,
+                    rgba(212, 76, 144, 0.158),
+                    rgba(204, 0, 122, 0.15)); */
+
+            position: relative;
+            overflow: visible;
+            user-select: none;
+        }
+
+        header h2 {
+            font-weight: 400;
+            font-size: 2.2rem;
+            color: #ffffff;
+            text-transform: lowercase;
+           margin-bottom: 0;
+            /* text-shadow: 0 0 4px rgba(204, 0, 122, 0.5); */
+        }
+
+        header h1 {
+            font-family: "Tiny5", sans-serif;
+            /* Override font here */
+            font-size: 20rem;
+            color: #ffffff;
+            margin: 0.4rem 0 1rem;
+            font-weight: 1000;
+            /* text-shadow: 0 0 10px rgba(230, 0, 115, 0.8); */
+            letter-spacing:50px;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+             line-height: 0.9; /* <-- This removes line spacing */
+            user-select: text;
+        }
+
+
+
+        /* Content sections styling */
+        .card-section {
+            background-color: rgba(255, 255, 255, 0.205);
+            border-radius: 20px;
+            padding: 1.5rem 2rem;
+            margin: 2rem auto 3rem;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            max-width: 720px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .blurred-background {
+            background: rgba(255, 255, 255, 0.103);
+            /* semi-transparent white */
+            backdrop-filter: blur(10px);
+            /* blur effect */
+            -webkit-backdrop-filter: blur(10px);
+            /* Safari support */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-section h2 {
+
+            /* Override font here */
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            /* color: #cc007a; */
+            /* Remove flex */
+            display: block;
+            /* or just remove display */
+            text-align: center;
+            /* center the text */
+            /* remove align-items and gap */
+        }
+
+        .spotify-links a {
+            display: inline-block;
+            margin: 0.3rem 0.5rem 0.3rem 0;
+            color: white;
+            text-decoration: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s, color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Different colors for each button */
+        .spotify-links a:nth-child(1) {
+            background-color: #a58c01;
+        }
+
+        /* Spotify green */
+        .spotify-links a:nth-child(2) {
+            background-color: #a58c01;
+        }
+
+        /* Coral red */
+        .spotify-links a:nth-child(3) {
+            background-color: #a58c01;
+        }
+
+        /* Orange */
+        .spotify-links a:nth-child(4) {
+            background-color: #a58c01;
+        }
+
+        /* Purple */
+        .spotify-links a:nth-child(5) {
+            background-color:#a58c01;
+        }
+
+        /* Blue */
+
+        .spotify-links a:hover {
+            filter: brightness(85%);
+            color: white;
+        }
+
+        .sadness-section {
+            background-color: #121212a6;
+            /* very dark grey/black */
+            color: #ddd;
+            /* lighter text for contrast */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .sadness-section h2 {
+            color: #c4bdbd;
+            /* optional accent color for the header */
+        }
+
+        .quote {
+            background: #5e2504ad;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #ffffff;
+            font-style: italic;
+        }
+
+
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        /* Remove grid layout for images */
+        section>div {
+            display: block;
+            gap: 0;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 10rem;
+                letter-spacing: 3px;
+            }
+
+            header h2 {
+                font-size: 1.6rem;
+            }
+
+            .card-section {
+                padding: 1rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .card-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            header h1 {
+                font-size: 2.8rem;
+            }
+
+            header h2 {
+                font-size: 1.3rem;
+            }
+
+            .spotify-links a {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+            /* opacity: 0.7; */
+            /* Optional: adjust to make it less distracting */
+            filter: blur(3px);
+            /* Optional: add blur for aesthetic */
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="images/bg/bg-mov-2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h2>for</h2>
+        <h1>
+            Upu
+            <!-- Optional heart icon if you want -->
+            <!-- <i class="fas fa-heart heart-icon" aria-hidden="true"></i> -->
+        </h1>
+        <h2>with love</h2>
+    </header>
+
+    <div class="card-section blurred-background" style="text-align: center;">
+        <p>
+            You gave me the idea of creating a webpage, when you sent me that webpage you made - and it was something
+            that I really appreciated so much. I thought I could do something similar for you - seeing as we haven't
+            really spoken much lately, and I feel you might think that I am forgetting you.
+        </p>
+        <p>
+            I want you to know that you are a special person in my life, and I'm sorry if sometimes I don't show it loud
+            enough as you need it, but thank you for being in my life - I really do appreciate you, and I really do mean
+            it when I say that I love you.
+        </p>
+        <p style="font-weight: bold;">
+            Here are a few things that have been in the back of my mind these last few weeks about you.
+        </p>
+    </div>
+
+    <section class="card-section blurred-background">
+        <h2> SONGS THAT REMIND ME OF YOU</h2>
+        <div class="spotify-links">
+            <a href="https://open.spotify.com/track/7fyG2MquxykO3Ufiku1Dj2" target="_blank"
+                rel="noopener noreferrer">Play me first</a>
+            <a href="https://open.spotify.com/track/4AajxCEwGEsmHmT4H1TwjY" target="_blank"
+                rel="noopener noreferrer">Play me second</a>
+            <a href="https://open.spotify.com/track/4yn6T6oXDeO0t5gdY1SNFT" target="_blank"
+                rel="noopener noreferrer">Play me third</a>
+            <a href="https://open.spotify.com/track/7I1kle4TNmkfednJDKo8GR" target="_blank"
+                rel="noopener noreferrer">Play me fourth</a>
+            <a href="https://open.spotify.com/track/0SIAFU49FFHwR3QnT5Jx0k" target="_blank"
+                rel="noopener noreferrer">Play me last</a>
+        </div>
+    </section>
+    <section class="card-section blurred-background">
+    <h2 style="text-align: center;">QUOTES THAT REMIND ME OF YOU</h2>
+    <div class="quote">
+        “Some people never go crazy. What truly horrible lives they must lead.”<br />
+        ― Charles Bukowski
+    </div>
+    <div class="quote">
+        “what matters most is how well you walk through the fire”<br />
+        ― Charles Bukowski
+    </div>
+    <div class="quote">
+        “Find what you love and let it kill you.”<br />
+        ― Charles Bukowski
+    </div>
+    <div class="quote">
+        “If you're losing your soul and you know it, then you've still got a soul left to lose”<br />
+        ― Charles Bukowski and Carl Weissner
+    </div>
+    <div class="quote">
+        “being alone never felt right. sometimes it felt good, but it never felt right.”<br />
+        ― Charles Bukowski, Women
+    </div>
+</section>
+    <section class="card-section sadness-section">
+<h2 style="text-align: center;"> HOW I SEE YOUR SADNESS</h2>
+        <div style="align-items: center;">
+            <img src="images/sadness/upu-image-1.jpg" alt="Sad image 1" />
+            <img src="images/sadness/upu-image-2.jpg" alt="Sad image 2" />
+            <img src="images/sadness/upu-image-3.jpg" alt="Sad image 3" />
+            <img src="images/sadness/upu-image-4.jpg" alt="Sad image 4" />
+            <img src="images/sadness/upu-image-5.jpg" alt="Sad image 5" />
+            <img src="images/sadness/upu-image-6.jpg" alt="Sad image 6" />
+            <img src="images/sadness/upu-image-7.jpg" alt="Sad image 7" />
+            <img src="images/sadness/upu-image-8.jpg" alt="Sad image 8" />
+            <img src="images/sadness/upu-image-9.jpg" alt="Sad image 9" />
+        </div>
+    </section>
+    
+    <section class="card-section">
+<h2 style="text-align: center;"> HOW I SEE YOU</h2>
+        <div>
+            <img src="images/her/upu-hap-1.jpg" alt="Happy image 1" />
+            <img src="images/her/upu-hap-2.jpg" alt="Happy image 2" />
+            <img src="images/her/upu-hap-3.jpg" alt="Happy image 3" />
+            <img src="images/her/upu-hap-4.jpg" alt="Happy image 4" />
+            <img src="images/her/upu-hap-5.jpg" alt="Happy image 5" />
+            <img src="images/her/upu-hap-6.jpg" alt="Happy image 6" />
+            <img src="images/her/upu-hap-7.jpg" alt="Happy image 7" />
+            <img src="images/her/upu-hap-8.jpg" alt="Happy image 8" />
+            <img src="images/her/upu-hap-9.jpg" alt="Happy image 9" />
+        </div>
+    </section>
+</body>
+
+</html>
